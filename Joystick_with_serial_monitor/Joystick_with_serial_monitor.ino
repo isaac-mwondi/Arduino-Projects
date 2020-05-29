@@ -1,6 +1,25 @@
 /*Using a joystick with the serial monitor
 The joystick is similar to two potentiometers connected together, 
 one for the vertical movement (Y-axis) and other for the horizontal movement (X-axis).
+Using the joystick pins
+VCC
+
+GND
+
+VRx -> Variable resistance x
+
+VRY -> Variable resistance Y
+
+SW -> Switch / Button
+
+Connection
+MODULE -> ARDUINO
+
+VCC -> 5V
+GND -> GND
+VRx -> A0
+VRy -> A1
+SW -> Pin 2
 
 
 */
