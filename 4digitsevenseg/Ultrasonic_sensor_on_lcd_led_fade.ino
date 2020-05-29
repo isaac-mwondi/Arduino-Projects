@@ -62,11 +62,11 @@ lcd.setCursor(0,0); // Sets the location at which subsequent text written to the
 lcd.print("Distance: "); // Prints string "Distance" on the LCD
 lcd.print(distanceCm); // Prints the distance value from the sensor
 lcd.print(" cm");
-delay(10);
+delay(10);// Short Delay allows for smoother fading
 
 lcd.setCursor(0,1);
 lcd.print("Distance: ");
 lcd.print(distanceInch);
 lcd.print(" inch");
-delay(10);
+delay(10); // Short Delay allows for smoother fading
 }
