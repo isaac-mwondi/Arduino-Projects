@@ -1,5 +1,16 @@
 /*
+Arduino Joystick Interface – Control Servo using Arduino and Joystick
+ Pins of a Joystick
+A typical Joystick Module consists of 5 Pin on its board. They are:
 
+VRx
+VRy
+SW
++5V
+GND
+Here, +5V and GND pins must be connected to, well +5V and GND of a power supply (you can connect them to respective pins on Arduino). The VRx and VRy are the Wiper terminals of the two potentiometers.
+
+Finally, SW is one end of a switch, where its other terminal is connected to GND (on the board of the Joystick).
 
 */
 #include <Servo.h>
