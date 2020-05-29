@@ -1,18 +1,18 @@
-/*
 
 
-*/
+//include servo library
+
 #include <Servo.h>
 
 
-const int xPin1 = A0;                                               
+const int xPin1 = A0;   // joystick x direction pin                                             
 const int yPin1 = A1;
 
 const int xPin2 = A3;
-const int yPin2 = A4;
+const int yPin2 = A4;// joystick y direction pin 
 
-const int servo1xPin = 9;
-const int servo1yPin = 10;
+const int servo1xPin = 9;// first servo
+const int servo1yPin = 10;// second servo
 
 const int servo2xPin = 11;
 const int servo2yPin = 12;
@@ -23,16 +23,16 @@ int yValue1;
 int xValue2;
 int yValue2;
 
-int X_pos1 = 90;
+int X_pos1 = 90; // storing servo position
 int Y_pos1 = 90;
 
-int X_pos2 = 90;
+int X_pos2 = 90; // storing servo position
 int Y_pos2 = 90;
  
-Servo servox1;
-Servo servoy1;
-Servo servox2;
-Servo servoy2;
+Servo servox1;// create servo object to control a servo
+Servo servoy1;// create servo object to control a servo
+Servo servox2;// create servo object to control a servo
+Servo servoy2;// create servo object to control a servo
 
 void setup() 
 {
@@ -41,8 +41,8 @@ void setup()
   pinMode (xPin2, INPUT) ;                     
   pinMode (yPin2, INPUT) ;
   
-  servox1.attach(servo1xPin ); 
-  servoy1.attach(servo1yPin); 
+  servox1.attach(servo1xPin );  // attaches the servo
+  servoy1.attach(servo1yPin);  // attaches the servo
   servox2.attach(servo2xPin ); 
   servoy2.attach(servo2yPin); 
   
@@ -89,12 +89,12 @@ void loop()
       delay(100);
     }
   }
-// For Y-Axis Servo
+                    // For Y-Axis Servo
 if (yValue1 < 300)
   {
     if (Y_pos1 < 10) 
     {
-      // Do Nothing 
+                 // Do Nothing 
     } 
     else
     {
@@ -108,7 +108,7 @@ if (yValue1 < 300)
   {
     if (Y_pos1 > 160)
     {
-      // Do Nothing  
+                  // Do Nothing  
     }
     else
     {
