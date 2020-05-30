@@ -12,7 +12,7 @@ boolean buttonState;
 void setup() {
   
 pinMode(button,INPUT);digitalWrite(button,LOW);
-Serial.begin(9600);
+Serial.begin(9600);//Intiallize the serial connection
 
 }
 
